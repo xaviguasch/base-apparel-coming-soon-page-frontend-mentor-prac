@@ -81,10 +81,6 @@ img {
   font-size: var(--fs-12);
 }
 
-.footer {
-  color: var(--clr-dark-grayish-red);
-}
-
 /* Utility styles */
 
 .container {
@@ -124,10 +120,10 @@ img {
 .image-area-mobile {
   width: 100%;
   height: 248px;
-  background-image: url('./images/hero-mobile.jpg');
-  background-position: 100% 0%;
-  background-repeat: no-repeat;
-  background-size: 100%;
+}
+
+.image-mobile {
+  width: 100%;
 }
 
 .main-area {
@@ -217,22 +213,7 @@ input::placeholder {
   display: block;
 }
 
-/* SECTIONS */
-
-/* Footer */
-
-.footer {
-  margin-top: auto;
-}
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-@media (min-width: 1050px) {
+@media (min-width: 800px) {
   .container {
     margin: 0 auto;
     max-width: 100%;
