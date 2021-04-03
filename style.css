@@ -144,15 +144,12 @@ img {
   margin-bottom: 3em;
 }
 
-.email-form.error {
-}
-
 input {
   width: 100%;
-  padding: 1.1em 1.5em;
+  padding: 1.2em 1.5em;
   background-color: transparent;
   color: var(--clr-dark-grayish-red);
-  font-size: var(--fs-16);
+  font-size: var(--fs-14);
   font-family: var(--ff-josefin);
   font-weight: var(--fw-semi-bold);
   letter-spacing: 1.2px;
@@ -177,9 +174,10 @@ input::placeholder {
   background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   border-radius: 1.8em;
   border: none;
-  padding: 1.1em 2.2em;
+  padding: 1em 2.2em;
   box-shadow: 0px 10px 20px 4px hsla(0, 74%, 74%, 0.3);
   transition: opacity 0.3s ease;
+  outline: none;
 }
 
 .arrow-btn:hover,
@@ -192,7 +190,7 @@ input::placeholder {
 .error-icon {
   display: none;
   position: absolute;
-  top: 16px;
+  top: 15%;
   left: 215px;
   box-shadow: 0px 10px 20px 4px hsla(0, 74%, 74%, 0.2);
 }
@@ -253,6 +251,10 @@ input::placeholder {
     display: none;
   }
 
+  .main-area {
+    max-width: 550px;
+  }
+
   .message-title {
     font-size: var(--fs-64);
   }
@@ -266,16 +268,24 @@ input::placeholder {
     padding-right: 4em;
   }
 
+  input {
+    font-size: var(--fs-16);
+  }
+
+  input::placeholder {
+    font-size: var(--fs-16);
+  }
+
   .arrow-btn {
     position: absolute;
-    padding: 1.1em 2.7em;
+    padding: 1.2em 2.7em;
     top: 0;
     right: 55px;
   }
 
   .error-icon {
     left: unset;
-    right: 30%;
+    right: 150px;
   }
 
   .right-area-desktop {
