@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom properties */
+
+:root {
+  --ff-josefin: 'Josefin Sans', sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-28: 1.75rem;
+  --fs-32: 2rem;
+  --fs-36: 2.25rem;
+  --fs-40: 2.5rem;
+
+  /* - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+
+  --clr-desaturated-red: hsl(0, 36%, 70%);
+  --clr-soft-red: hsl(0, 93%, 68%);
+  --clr-dark-grayish-red: hsl(0, 6%, 24%);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--ff-josefin);
+  margin: 0;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-regular);
+  color: var(--clr-desaturated-red);
+  text-align: center;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Typography */
+.message-title {
+  font-size: var(--fs-40);
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-dark-grayish-red);
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.message-title__variation {
+  font-weight: var(--fw-light);
+  color: var(--clr-desaturated-red);
+}
+
+::placeholder {
+  color: var(--clr-desaturated-red);
+  font-family: inherit;
+}
+
+.error-message {
+  color: var(--clr-soft-red);
+  font-size: var(--fs-12);
+}
+
+.footer {
+  color: var(--clr-dark-grayish-red);
+}
+
+/* Utility styles */
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-area {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  padding: 1.5em 0em;
+}
+
+.logo {
+  transform: scale(0.6);
+}
+
+.image-area-mobile {
+  width: 100%;
+  height: 248px;
+  background-image: url('./images/hero-mobile.jpg');
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main-area {
+  padding: 4em 2em 3em;
+}
+
+.message-text {
+  margin-top: 1.5em;
+}
+
+.right-area-desktop {
+  display: none;
+}
+
+.email-form {
+  position: relative;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+input {
+  width: 100%;
+  padding: 1.5em;
+  background-color: transparent;
+  color: var(--clr-desaturated-red);
+  font-family: var(--ff-josefin);
+  border-radius: 1.8em;
+  border: 1px var(--clr-desaturated-red) solid;
+}
+
+.arrow-btn {
+  position: absolute;
+  top: 0;
+  right: -3px;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border-radius: 1.8em;
+  border: none;
+  padding: 1.2em 2.2em;
+  box-shadow: 0px 10px 20px 4px hsla(0, 74%, 74%, 0.2);
+}
+
+.arrow-btn:hover,
+.arrow-btn:active {
+  opacity: 0.8;
+}
+
+.error-icon {
+  position: absolute;
+  top: 16px;
+  left: 215px;
+  box-shadow: 2px 10px 20px 5px hsla(0, 74%, 74%, 0.1);
+}
+
+.error-message {
+  display: block;
+  text-align: left;
+  margin-top: 0.7em;
+  margin-left: 1.5em;
+}
+
+/* SECTIONS */
+
+/* Footer */
+
+.footer {
+  margin-top: auto;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
