@@ -196,7 +196,8 @@ input::placeholder {
 }
 
 .email-form.error .error-icon {
-  opacity: 0;
+  opacity: 1;
+  display: block;
 }
 
 .error-message {
