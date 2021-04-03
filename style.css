@@ -196,19 +196,20 @@ input::placeholder {
 }
 
 .email-form.error .error-icon {
-  display: block;
+  opacity: 0;
 }
 
 .error-message {
-  display: none;
-  color: var(--clr-soft-red);
-  text-align: left;
-  margin-top: 0.7em;
-  margin-left: 1.5em;
+  position: relative;
+  opacity: 0;
+  top: 10px;
+  left: -35px;
+  margin-left: -50px;
 }
 
 .email-form.error .error-message {
   display: block;
+  opacity: 1;
 }
 
 @media (min-width: 800px) {
@@ -286,6 +287,10 @@ input::placeholder {
   .error-icon {
     left: unset;
     right: 150px;
+  }
+
+  .email-form.error .error-message {
+    left: 75px;
   }
 
   .right-area-desktop {
